@@ -12,32 +12,32 @@ package ProjectEuler;
  * <p>Link: https://projecteuler.net/problem=2
  */
 public class Problem02 {
-  public static void main(String[] args) {
-    int[][] testNumbers = {
-      {10, 10}, /* 2 + 8 == 10 */
-      {15, 10}, /* 2 + 8 == 10 */
-      {2, 2},
-      {1, 0},
-      {89, 44} /* 2 + 8 + 34 == 44 */
-    };
+    public static void main(String[] args) {
+        int[][] testNumbers = {
+                {10, 10}, /* 2 + 8 == 10 */
+                {15, 10}, /* 2 + 8 == 10 */
+                {2, 2},
+                {1, 0},
+                {89, 44} /* 2 + 8 + 34 == 44 */
+        };
 
-    for (int[] ints : testNumbers) {
-      assert solution1(ints[0]) == ints[1];
+        for (int[] ints : testNumbers) {
+            assert solution1(ints[0]) == ints[1];
+        }
     }
-  }
 
-  private static int solution1(int n) {
-    int sum = 0;
-    int first = 1;
-    int second = 2;
-    while (second <= n) {
-      if (second % 2 == 0) {
-        sum += second;
-      }
-      int temp = first + second;
-      first = second;
-      second = temp;
+    private static int solution1(int n) {
+        int sum = 0;
+        int first = 1;
+        int second = 2;
+        while (second <= n) {
+            if (second % 2 == 0) {
+                sum += second;
+            }
+            int temp = first + second;
+            first = second;
+            second = temp;
+        }
+        return sum;
     }
-    return sum;
-  }
 }

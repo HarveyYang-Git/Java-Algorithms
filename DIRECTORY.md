@@ -1,5 +1,5 @@
 
-## ciphers
+## Ciphers
   * [AES](https://github.com/TheAlgorithms/Java/blob/master/ciphers/AES.java)
   * [AESEncryption](https://github.com/TheAlgorithms/Java/blob/master/ciphers/AESEncryption.java)
   * [Caesar](https://github.com/TheAlgorithms/Java/blob/master/ciphers/Caesar.java)

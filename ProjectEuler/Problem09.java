@@ -10,19 +10,19 @@ package ProjectEuler;
  * <p>link: https://projecteuler.net/problem=9
  */
 public class Problem09 {
-  public static void main(String[] args) {
-    assert solution1() == 31875000;
-  }
-
-  private static int solution1() {
-    for (int i = 0; i <= 300; ++i) {
-      for (int j = 0; j <= 400; ++j) {
-        int k = 1000 - i - j;
-        if (i * i + j * j == k * k) {
-          return i * j * k;
-        }
-      }
+    public static void main(String[] args) {
+        assert solution1() == 31875000;
     }
-    return -1; /* should not happen */
-  }
+
+    private static int solution1() {
+        for (int i = 0; i <= 300; ++i) {
+            for (int j = 0; j <= 400; ++j) {
+                int k = 1000 - i - j;
+                if (i * i + j * j == k * k) {
+                    return i * j * k;
+                }
+            }
+        }
+        return -1; /* should not happen */
+    }
 }
